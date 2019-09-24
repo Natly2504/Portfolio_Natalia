@@ -50,9 +50,8 @@
 	font-size: 12px;
 	margin: 10px 0 0 0;
 	line-height: 1.6;
-	max-width: 600;
+	max-width: 600px;
 	letter-spacing: 0.48px;
-	text-align: left;
 }
 .intro{
     position: absolute;
@@ -65,7 +64,6 @@
 	font-size: 12px;
 	text-align: center;
 	border-radius: 20.2px;
-	padding: 16px 43px 16px 42px;
 	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -100,25 +98,25 @@
 }
 .about-me-container{
 	display: flex;
-	max-width: 400px;
 	font-weight: 600;
 }
 .paragraph{
 	color: rgba(0,0,0,0.7);
-	width: 340px;
-	height:88px;
+	width: 400px;
 }
 .job{
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.5;
     letter-spacing: 0.48px;
+    color: #000000;
 }
 .years{
 font-weight: 300;	
 }
 .row{
 	display: flex;
+	justify-content: center;
 }
 .column{
 	flex: 50%;
@@ -162,6 +160,9 @@ font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
 	font-size: 12px;
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
 }
 .input{
 	display: block;
@@ -170,13 +171,14 @@ font-weight: 300;
     text-transform: uppercase;
     line-height: 1.15;
     letter-spacing: 2.16px;
-    padding: 50px 361px 50px 0;
-    margin: 0;
+    margin-top:50px;
+    width: 361px;
     border: none;
-    border-bottom: 5px solid rg;
+    border-bottom: 5px solid #000000;
 }
 .input:placeholder{
-	color: rgba(0, 0, 0, 0.5); 
+	color: #000000;
+	font-weight: 600;
 }
 .textarea{
 	display: block;
@@ -185,15 +187,15 @@ font-weight: 300;
     text-transform: uppercase;
     line-height: 1.15;
     letter-spacing: 2.16px;	
-    padding: 50px 361px 170px 0;
-    margin: 0;
+    width: 360px;
+    margin: 50px 0 0 50px;
     border: none;
-    border-bottom: 5px solid rg;
+    border-bottom: 5px solid #000000;
 }
 .button-2{
     text-align: center;
+    padding: 70px 0 76px 0;
 }
 .send{
 	background:  #000000;
-	color: #fff;
 }
