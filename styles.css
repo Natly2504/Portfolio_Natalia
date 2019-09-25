@@ -51,7 +51,6 @@
 	font-size: 12px;
 	margin: 10px 0 0 0;
 	line-height: 1.6;
-	max-width: 600px;
 	letter-spacing: 0.48px;
 }
 .intro{
@@ -105,7 +104,7 @@
 }
 .paragraph{
 	color: rgba(0,0,0,0.7);
-	width: 400px;
+	max-width: 400px;
 }
 .job{
 	font-weight: 600;
@@ -177,7 +176,7 @@ font-weight: 300;
     margin-top:50px;
     width: 361px;
     border: none;
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
 }
 .input:placeholder{
 	color: #000000;
@@ -193,7 +192,7 @@ font-weight: 300;
     width: 360px;
     margin: 50px 0 0 50px;
     border: none;
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
 }
 .button-2{
     text-align: center;
