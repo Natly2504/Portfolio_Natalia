@@ -18,13 +18,19 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
+	max-width: 100px;
+	line-height: 1.18;
+    letter-spacing: 4.78px;
+    padding: 0;
 }
 .links{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
-	padding: 0;
+	line-height: 2.7;
+	letter-spacing: 2.87px;
+	width: 255px;
+	padding: 0 40px 0 0;
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -36,6 +42,7 @@
 .menu-container{
 	display: flex;
 	justify-content: space-between;
+	padding: 0 0 0 40px;
 }
 .subtitle{
 	font-size: 20px;
@@ -49,13 +56,14 @@
 }
 .about{
 	font-size: 12px;
-	margin: 10px 0 0 0;
+	margin: 30px 0 0 0;
 	line-height: 1.6;
 	letter-spacing: 0.48px;
+	margin-bottom: 60px;
 }
 .intro{
     position: absolute;
-    top: 243px;
+    padding: 135px 0 0 35px;
     max-width: 400px;
 }
 .button{
@@ -70,10 +78,11 @@
 	width: 194px;
     height: 42px;
 	background: transparent;
+	animation: myAnimation1 3s infinite ease-in-out;
 }
 .header{
 	background-image: url("images/main.jpg");
-	height: 714px;
+	height: 700px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -88,8 +97,10 @@
 }
 .about-img{
 	width: 308px;
-    height: 340px;
+    height: 350px;
     object-fit: contain;
+    padding: 0 0 0 35px;
+    transform: rotate(45deg) translate(100px, 20px);
 }
 .subtitle-small{
 	font-size: 12px;
@@ -104,6 +115,8 @@
 .paragraph{
 	color: rgba(0,0,0,0.7);
 	max-width: 400px;
+	padding-left: 55px;
+	margin-bottom: 60px;
 }
 .job{
 	font-weight: 600;
@@ -111,9 +124,11 @@
 	line-height: 1.5;
     letter-spacing: 0.48px;
     color: #000000;
+    padding: 0 0 0 50px;
 }
 .years{
-font-weight: 300;	
+font-weight: 300;
+padding-left: 45px;
 }
 .row{
 	display: flex;
@@ -126,6 +141,7 @@ font-weight: 300;
 .my-latest-works-container{
 	text-align: center;
 	background-color:#d1bac8;
+	margin-top: 135px;
 }
 .subtitle-2{
 	text-align: center;
@@ -134,15 +150,26 @@ font-weight: 300;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	padding: 20px 0 0 0;
 }
 .menu{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	padding:20px 37px 66px 37px;
+	padding: 20px 35px 65px 37px;
 }
 .portfolio-item{
 	position: relative;
+	height: 235px;
+}
+.portfolio-item:hover{
+	cursor: pointer;
+}
+.portfolio-item:hover .portfolio-hover{
+	opacity: 1;
+}
+.portfolio-item:hover::before{
+	opacity: 1;
 }
 .portfolio-item::before{
 	content:"";
@@ -151,11 +178,17 @@ font-weight: 300;
 	height:100%;
 	display:block;
 	position: absolute;
+	opacity: 0;
+	transition: all 2s;
 }
 .portfolio-hover{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	transition: all 2s;
+	opacity: 0;
+	text-align: left;
+	padding: 0 0 10px 40px;
 }
 .portfolio-link{
 	line-height: 1.5;
@@ -172,9 +205,9 @@ font-weight: 300;
     text-transform: uppercase;
     line-height: 1.15;
     letter-spacing: 2.16px;
-    margin-top:50px;
     width: 361px;
     border: none;
+    padding-top: 60px;
     border-bottom: 5px solid rgba(0, 0, 0, 0.6);
 }
 .input:placeholder{
@@ -184,19 +217,28 @@ font-weight: 300;
 .textarea{
 	display: block;
 	font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.15;
-    letter-spacing: 2.16px;	
-    width: 360px;
-    margin: 50px 0 0 50px;
-    border: none;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.15;
+	letter-spacing: 2.16px;	
+	width: 360px;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	margin: 60px 0 0 20px;
 }
 .button-2{
-    text-align: center;
-    padding: 70px 0 76px 0;
+	text-align: center;
+	padding: 50px 0 76px 40px;
 }
 .send{
 	background:  #000000;
+	width: 215px;
+}
+@keyframes myAnimation1{
+	0%{
+		background: violet;
+	}
+	100%{
+		background: silver;
+	}
 }
