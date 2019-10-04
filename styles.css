@@ -20,8 +20,9 @@
 	font-weight: 600;
 	max-width: 100px;
 	line-height: 1.18;
-    letter-spacing: 4.78px;
+    letter-spacing: 5px;
     padding: 0;
+    margin: 5px 0 0 -1px;
 }
 .links{
 	font-size: 12px;
@@ -49,22 +50,23 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 0.93;
-    letter-spacing: 2px;
+    letter-spacing: 3.2px;
+    margin: 0;
 }
 .header-container{
 	margin: 150px 0 0 0;
 }
 .about{
 	font-size: 12px;
-	margin: 30px 0 0 0;
+	margin: 34px 0 57px 0;
 	line-height: 1.6;
 	letter-spacing: 0.48px;
-	margin-bottom: 60px;
 }
 .intro{
     position: absolute;
-    padding: 135px 0 0 35px;
-    max-width: 400px;
+    max-width: 420px;
+    top: 223px;
+    left: 33px;
 }
 .button{
 	color: #fff;
@@ -72,17 +74,21 @@
 	font-size: 12px;
 	text-align: center;
 	border-radius: 20.2px;
-	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
 	width: 194px;
     height: 42px;
 	background: transparent;
-	animation: myAnimation1 3s infinite ease-in-out;
+	letter-spacing: 2.87px;
+}
+.button:hover{
+	background: white;
+	color: #6a4a4c;
+	cursor: pointer;
 }
 .header{
 	background-image: url("images/main.jpg");
-	height: 700px;
+	height: 695px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -100,7 +106,6 @@
     height: 350px;
     object-fit: contain;
     padding: 0 0 0 35px;
-    transform: rotate(45deg) translate(100px, 20px);
 }
 .subtitle-small{
 	font-size: 12px;
@@ -110,12 +115,10 @@
 }
 .about-me-container{
 	display: flex;
-	font-weight: 600;
 }
 .paragraph{
 	color: rgba(0,0,0,0.7);
 	max-width: 400px;
-	padding-left: 55px;
 	margin-bottom: 60px;
 }
 .job{
@@ -124,11 +127,12 @@
 	line-height: 1.5;
     letter-spacing: 0.48px;
     color: #000000;
-    padding: 0 0 0 50px;
+    margin: 27px 0 0 0;
+    max-width: 178px;
 }
 .years{
 font-weight: 300;
-padding-left: 45px;
+color: rgba(0,0,0,0.7);
 }
 .row{
 	display: flex;
@@ -136,12 +140,13 @@ padding-left: 45px;
 }
 .column{
 	flex: 50%;
-	padding: 10px;
 }
 .my-latest-works-container{
 	text-align: center;
 	background-color:#d1bac8;
-	margin-top: 135px;
+   margin-top: 60px;
+   padding-top: 55px;
+   padding-bottom: 1px;
 }
 .subtitle-2{
 	text-align: center;
@@ -150,13 +155,17 @@ padding-left: 45px;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	padding: 20px 0 0 0;
+	margin: 15px 0 0 0;
+	display: block;
 }
 .menu{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 35px 65px 37px;
+	margin: 43px auto 65px auto;
+	padding: 0;
+	max-width: 1125px;
+
 }
 .portfolio-item{
 	position: relative;
@@ -188,7 +197,10 @@ padding-left: 45px;
 	transition: all 2s;
 	opacity: 0;
 	text-align: left;
-	padding: 0 0 10px 40px;
+	box-sizing: border-box;
+	top: 170px;
+	padding-left: 20px;
+	padding-left: 42px;
 }
 .portfolio-link{
 	line-height: 1.5;
@@ -207,12 +219,18 @@ padding-left: 45px;
     letter-spacing: 2.16px;
     width: 361px;
     border: none;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
     border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+    outline: none;
 }
 .input:placeholder{
 	color: #000000;
 	font-weight: 600;
+}
+.input:not (:last-child){
+	background: #ff0000;
 }
 .textarea{
 	display: block;
@@ -224,21 +242,23 @@ padding-left: 45px;
 	width: 360px;
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-	margin: 60px 0 0 20px;
+	margin: 76px 0 20px 43px;
 }
 .button-2{
 	text-align: center;
-	padding: 50px 0 76px 40px;
+	padding: 28px 0 76px 40px;
 }
 .send{
 	background:  #000000;
 	width: 215px;
+	letter-spacing: 6px;
 }
-@keyframes myAnimation1{
-	0%{
-		background: violet;
-	}
-	100%{
-		background: silver;
-	}
+.job:hover{
+	cursor: pointer;
+}
+.job-hover{
+transform:scale(1.5) rotate(30deg);
+}
+.job:hover .job-hover{
+	opacity: 1;
 }
