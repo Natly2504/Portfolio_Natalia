@@ -18,13 +18,20 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
+	max-width: 100px;
+	line-height: 1.18;
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 5px 0 0 -1px;
 }
 .links{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
-	padding: 0;
+	line-height: 2.7;
+	letter-spacing: 2.87px;
+	width: 255px;
+	padding: 0 39px 0 0;
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -36,27 +43,31 @@
 .menu-container{
 	display: flex;
 	justify-content: space-between;
+	padding: 18px 0 0 41px;
 }
 .subtitle{
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 0.93;
-    letter-spacing: 2px;
+    letter-spacing: 3.2px;
+    margin: 0;
 }
 .header-container{
 	margin: 150px 0 0 0;
 }
 .about{
+	display: flex;
 	font-size: 12px;
-	margin: 10px 0 0 0;
+	margin: 34px 0 57px 0;
 	line-height: 1.6;
 	letter-spacing: 0.48px;
 }
 .intro{
     position: absolute;
-    top: 243px;
-    max-width: 400px;
+    max-width: 420px;
+    top: 239px;
+    left: 36px;
 }
 .button{
 	color: #fff;
@@ -64,16 +75,22 @@
 	font-size: 12px;
 	text-align: center;
 	border-radius: 20.2px;
-	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
 	width: 194px;
     height: 42px;
 	background: transparent;
+	letter-spacing: 2.87px;
+	transition: all 2s;
+}
+.button:hover{
+	background: white;
+	color: #6a4a4c;
+	cursor: pointer;
 }
 .header{
 	background-image: url("images/main.jpg");
-	height: 714px;
+	height: 713px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -83,13 +100,11 @@
 	margin: 0 auto;
 	font-family: 'Poppins', sans-serif;
 }
-.about{
-    display: flex;
-}
 .about-img{
 	width: 308px;
-    height: 340px;
+    height: 350px;
     object-fit: contain;
+    padding: 0 0 0 35px;
 }
 .subtitle-small{
 	font-size: 12px;
@@ -99,11 +114,11 @@
 }
 .about-me-container{
 	display: flex;
-	font-weight: 600;
 }
 .paragraph{
 	color: rgba(0,0,0,0.7);
 	max-width: 400px;
+	margin-bottom: 60px;
 }
 .job{
 	font-weight: 600;
@@ -111,9 +126,12 @@
 	line-height: 1.5;
     letter-spacing: 0.48px;
     color: #000000;
+    margin: 27px 0 0 0;
+    max-width: 178px;
 }
 .years{
-font-weight: 300;	
+font-weight: 300;
+color: rgba(0,0,0,0.7);
 }
 .row{
 	display: flex;
@@ -121,11 +139,13 @@ font-weight: 300;
 }
 .column{
 	flex: 50%;
-	padding: 10px;
 }
 .my-latest-works-container{
 	text-align: center;
 	background-color:#d1bac8;
+   margin-top: 60px;
+   padding-top: 55px;
+   padding-bottom: 65px;
 }
 .subtitle-2{
 	text-align: center;
@@ -134,15 +154,30 @@ font-weight: 300;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin: 15px 0 0 0;
+	display: block;
 }
 .menu{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	padding:20px 37px 66px 37px;
+	margin: 43px 19px 0px 40px;
+	padding: 0;
+	max-width: 1125px;
+
 }
 .portfolio-item{
 	position: relative;
+	height: 235px;
+}
+.portfolio-item:hover{
+	cursor: pointer;
+}
+.portfolio-item:hover .portfolio-hover{
+	opacity: 1;
+}
+.portfolio-item:hover::before{
+	opacity: 1;
 }
 .portfolio-item::before{
 	content:"";
@@ -151,11 +186,20 @@ font-weight: 300;
 	height:100%;
 	display:block;
 	position: absolute;
+	opacity: 0;
+	transition: all 2s;
 }
 .portfolio-hover{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	transition: all 2s;
+	opacity: 0;
+	text-align: left;
+	box-sizing: border-box;
+	top: 170px;
+	padding-left: 20px;
+	padding-left: 42px;
 }
 .portfolio-link{
 	line-height: 1.5;
@@ -172,31 +216,85 @@ font-weight: 300;
     text-transform: uppercase;
     line-height: 1.15;
     letter-spacing: 2.16px;
-    margin-top:50px;
     width: 361px;
     border: none;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
     border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+    outline: none;
 }
 .input:placeholder{
 	color: #000000;
 	font-weight: 600;
 }
+.input:not (:last-child){
+	background: #ff0000;
+}
 .textarea{
 	display: block;
 	font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.15;
-    letter-spacing: 2.16px;	
-    width: 360px;
-    margin: 50px 0 0 50px;
-    border: none;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.15;
+	letter-spacing: 2.16px;	
+	width: 360px;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	margin: 76px 0 20px 43px;
+	outline: none;
 }
 .button-2{
-    text-align: center;
-    padding: 70px 0 76px 0;
+	text-align: center;
+	padding: 28px 0 76px 40px;
 }
 .send{
 	background:  #000000;
+	width: 215px;
+	letter-spacing: 6px;
+	border: 2px solid #000000;
+}
+.second{
+	margin-left: 10px;
+}
+.third{
+	display: block;
+	padding: 43px 0 0 39px;
+}
+.four{
+	margin: 10px 0 0 56px;
+}
+.five{
+	margin: 22px 0 76px 0;
+}
+.six{
+    margin: 37px 0 28px 46px;
+}
+.seven{
+	margin:0 0 0 81px;
+}
+.about-img:hover{
+	cursor: pointer;
+	transform: scale(1,5) skew(45deg);
+	transition: all 2s;
+} 
+.eight{
+	max-width: 250px;
+}
+.nine{
+	margin: 0px 0 0 48px;
+}
+.ten{
+	margin-left: 10px;
+}
+.eleven{
+	margin: 35px 0 0 0;
+}
+.twelve{
+	justify-content: space-between; 
+	max-width: 730px; 
+	margin: 0 auto;
+}
+.thirteen{
+	margin: 60px 0 0 0;
 }
