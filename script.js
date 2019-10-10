@@ -1,10 +1,10 @@
-var x = 5;
+var x = x;
 console.log(x);
 var y = 8;
 console.log(y);
-var number = prompt("Сколько будет пять плюс восемь?");
-console.log(number);
-parseInt("13",10);
-var SUM = x+y;
+var x = prompt("Введите X");
+console.log(x);
+parseInt("x",10);
+var SUM = x + y;
 console.log(SUM);
-alert("Правильный ответ" + SUM + "!");
+alert(SUM);
