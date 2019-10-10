@@ -81,7 +81,7 @@
     height: 42px;
 	background: transparent;
 	letter-spacing: 2.87px;
-	transition: all 2s;
+	transition: all 0.2s;
 }
 .button:hover{
 	background: white;
@@ -164,7 +164,6 @@ color: rgba(0,0,0,0.7);
 	margin: 43px 19px 0px 40px;
 	padding: 0;
 	max-width: 1125px;
-
 }
 .portfolio-item{
 	position: relative;
@@ -272,11 +271,14 @@ color: rgba(0,0,0,0.7);
 }
 .seven{
 	margin:0 0 0 81px;
-}
-.about-img:hover{
 	cursor: pointer;
 	transform: scale(1,5) skew(45deg);
-	transition: all 2s;
+	transition: all 4s;
+}
+.seven:hover{
+	cursor: pointer;
+	transform: scale(1,5) skew(45deg);
+	transition: all 4s;
 } 
 .eight{
 	max-width: 250px;

@@ -1,0 +1,10 @@
+var x = x;
+console.log(x);
+var y = 8;
+console.log(y);
+var x = prompt("Введите X");
+console.log(x);
+parseInt("x",10);
+var SUM = x + y;
+console.log(SUM);
+alert(SUM);
